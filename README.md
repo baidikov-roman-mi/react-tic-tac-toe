@@ -1,13 +1,61 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=42&pause=1000&center=true&vCenter=true&random=false&width=735&height=70&lines=Tic+Tac+Toe)](https://git.io/typing-svg)
+
 ## Overview
 
 This project serves as a tic tac toe game using Vite for faster development, TypeScript for type checking, SCSS for styling, and React for building user interfaces.
 
 ### Technologies used:
 
+<svg>
+<foreignObject>
+<div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+    .dev-container{
+        text-align: center;
+    }
+    .icon-container {
+            display: flex;
+            gap: 10px;
+            position: relative;
+    }
+    a[title]{
+        border-bottom: 2px solid gray;
+    }
+    a[title]:hover{
+        border-bottom: 2px solid #79c0ff;
+    }
+
+    a[title]:hover::after {
+            content: attr(title);
+            display: block;
+            position: absolute;
+            background-color:#0d1120;
+            border: 1px solid #79c0ff;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 2px;
+            animation: show-title .5s ease-in-out;
+            transform: translate(0);
+            font-family: 'Source Code Pro', monospace;
+            bottom: -40px;
+        }
+    @keyframes show-title{
+    0%{
+        opacity: 0;
+        transform: translate(0, -20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    }
+
+</style>
 <div class="icon-container">
     <a href=# title="HTML5" > 
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="35" width=35" alt="html5 logo"  />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="35" width="35" alt="html5 logo"  />
     </a>
     <a href=# title="TypeScript" >
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" height="35" width="35" alt="typescript logo"  />
@@ -24,6 +72,10 @@ This project serves as a tic tac toe game using Vite for faster development, Typ
 </div>
 <br />
 
+</div>
+</foreignObject>
+</svg>
+
 ### Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
@@ -39,11 +91,11 @@ If you are developing a production application, we recommend updating the config
 export default {
   // other rules...
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
+    tsconfigRootDir: __dirname
+  }
 }
 ```
 
@@ -93,47 +145,3 @@ You'll get a message inside the bash terminal:
 > **Server running at http://localhost:5173/**
 
 This means that you have successfully set up the project and you are free for local coding.
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
-
-    .dev-container{
-        text-align: center;
-    }
-    .icon-container {
-            display: flex;
-            gap: 10px;
-            position: relative;
-    }
-    a[title]{
-        border-bottom: 2px solid gray;
-    }
-    a[title]:hover{
-        border-bottom: 2px solid #79c0ff;
-    }
-
-    a[title]:hover::after {
-            content: attr(title);
-            display: block;
-            position: absolute;
-            background-color:#0d1120;
-            border: 1px solid #79c0ff;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 2px;
-            animation: show-title .5s ease-in-out;
-            transform: translate(0);
-            font-family: 'Source Code Pro', monospace;
-            bottom: -40px;
-        }
-    @keyframes show-title{
-    0%{
-        opacity: 0;
-        transform: translate(0, -20%);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-    }
-</style>
