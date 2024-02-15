@@ -6,10 +6,22 @@ This project serves as a tic tac toe game using Vite for faster development, Typ
 
 ### Technologies used:
 
-<div align="center">
-	<br>
-		<img src="/ReadmeLogos.svg" width="800" height="100">
-	<br>
+<div class="icon-container">
+    <a href=# title="HTML5" > 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="35" width="35" alt="html5 logo"  />
+    </a>
+    <a href=# title="TypeScript" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" height="35" width="35" alt="typescript logo"  />
+    </a>
+    <a href=# title="Sass" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="35" width="35" alt="sass logo"  />
+    </a>
+    <a href=# title="React">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="35" width="35" alt="react logo"  />
+    </a>
+    <a href=# title="Git">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" height="42" width="35" alt="git logo"  />
+    </a>
 </div>
 
 ### Currently, two official plugins are available:
