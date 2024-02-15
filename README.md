@@ -20,7 +20,7 @@ This project serves as a tic tac toe game using Vite for faster development, Typ
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="35" width="35" alt="react logo"  />
     </a>
     <a href=# title="Git">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" height="42" width="35" alt="git logo"  />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" height="35" width="35" alt="git logo"  />
     </a>
 </div>
 
@@ -53,7 +53,7 @@ export default {
 
 ## Just to see the output
 
-Here you will be able to see the result without any local setup.
+Here is [Netlify](https://reactpractisetictactoe.netlify.app/) link to see the result without any local setup.
 
 ## To load this project locally, follow these steps:
 
