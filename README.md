@@ -1,48 +1,95 @@
-# React + Vite
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=42&pause=1000&center=true&vCenter=true&random=false&width=735&height=70&lines=Tic+Tac+Toe)](https://git.io/typing-svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project serves as a tic tac toe game using Vite for faster development, TypeScript for type checking, SCSS for styling, and React for building user interfaces.
+
+### Technologies used:
+
+<div class="icon-container">
+    <a href=# title="HTML5" > 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="35" width="35" alt="html5 logo"  />
+    </a>
+    <a href=# title="TypeScript" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" height="35" width="35" alt="typescript logo"  />
+    </a>
+    <a href=# title="Sass" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="35" width="35" alt="sass logo"  />
+    </a>
+    <a href=# title="React">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="35" width="35" alt="react logo"  />
+    </a>
+    <a href=# title="Git">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" height="35" width="35" alt="git logo"  />
+    </a>
+</div>
+
+### Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# How to load it locally?
+### Expanding the ESLint configuration
 
-You may have vite project to load the project. Make sure you have the latest installed version of `node`, `pnpm` and `git bash` .
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## Step 1:
+- Configure the top-level `parserOptions` property like this:
 
-Open git bash terminal and create vite project :
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
+    tsconfigRootDir: __dirname
+  }
+}
+```
 
-`pnpm create vite <your folder name> `
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
-or if you don't want to create a new folder for the project jus type this:
+## Just to see the output
 
-`pnpm create vite . `
+Here is [Netlify](https://reactpractisetictactoe.netlify.app/) link to see the result without any local setup.
 
-## Step 2:
+## To load this project locally, follow these steps:
 
-Select "React" using arrow keys and click Enter
+### First step: Check for `node` and `pnpm`
 
-## Step 3:
+- To check it, run the following commands in your bash terminal: `node -v`, `pnpm -v`
 
-Select "JavaScript + SWC" using arrow keys and click Enter again
+  - If you don't have `node` on your device, install it [here](https://nodejs.org/en)
 
-## Step 4:
+  - If you don't have `pnpm`, run this command in your terminal: `npm install -D pnpm`
 
-After installing, type:
+### Second step: Clone this repository using this commands :
 
-`cd <your folder name>`
+```
+git clone https://github.com/baidikov-roman-mi/react-tic-tac-toe
+cd react-tic-tac-toe
+```
 
-and
+> The cd command is necessary only if your current folder is not empty.
 
-`pnpm install`
+Otherwise, just add "." in the end of `git clone`, and the project will be cloned iside of the folder you are in:
 
-## Step 5:
+```
+git clone https://github.com/baidikov-roman-mi/react-tic-tac-toe .
+```
 
-Replace the files from the project to your folder and you can use the project locally and edit it as you wish
+### Third step: Local setup
 
-# If you just want to see the result
+You have to install dependencies, add sass and finally start the development server by running dev command. You can do so with the following command:
 
-I will stay here the [CodeSandbox link](https://codesandbox.io/p/github/baidikov-roman-mi/react-tic-tac-toe/main?layout=%257B%2522sidebarPanel%2522%253A%2522GIT%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522clqkz731u00062a66qicsgisg%2522%252C%2522sizes%2522%253A%255B70%252C30%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522clqkz731u00022a66eh1kj72w%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522clqkz731u00042a66vxfco2y4%2522%257D%255D%252C%2522sizes%2522%253A%255B100%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522clqkz731u00052a664o5b2e6x%2522%257D%255D%252C%2522sizes%2522%253A%255B100%255D%257D%255D%252C%2522sizes%2522%253A%255B50%252C50%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522clqkz731u00022a66eh1kj72w%2522%253A%257B%2522id%2522%253A%2522clqkz731u00022a66eh1kj72w%2522%252C%2522activeTabId%2522%253A%2522clqkzk17500x12a66rgbe1x5e%2522%252C%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522clqkz731u00012a66ursuyfcq%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522filepath%2522%253A%2522%252F.eslintrc.cjs%2522%257D%252C%257B%2522type%2522%253A%2522FILE%2522%252C%2522filepath%2522%253A%2522%252F.codesandbox%252Ftasks.json%2522%252C%2522id%2522%253A%2522clqkzk17500x12a66rgbe1x5e%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%255D%257D%252C%2522clqkz731u00052a664o5b2e6x%2522%253A%257B%2522id%2522%253A%2522clqkz731u00052a664o5b2e6x%2522%252C%2522activeTabId%2522%253A%2522clqkza4ki00ud2a66g8710u2u%2522%252C%2522tabs%2522%253A%255B%257B%2522type%2522%253A%2522TASK_PORT%2522%252C%2522taskId%2522%253A%2522dev%2522%252C%2522port%2522%253A5173%252C%2522id%2522%253A%2522clqkza4ki00ud2a66g8710u2u%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522path%2522%253A%2522%252F%2522%257D%255D%257D%252C%2522clqkz731u00042a66vxfco2y4%2522%253A%257B%2522id%2522%253A%2522clqkz731u00042a66vxfco2y4%2522%252C%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522clqkz731u00032a66pm5ajnp5%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522TERMINAL%2522%252C%2522shellId%2522%253A%2522clqkz73y4000oegjp3vuua2hn%2522%257D%252C%257B%2522type%2522%253A%2522TASK_LOG%2522%252C%2522taskId%2522%253A%2522dev%2522%252C%2522id%2522%253A%2522clqkz74mo005d2a664l94mm7n%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%252C%257B%2522type%2522%253A%2522TASK_LOG%2522%252C%2522taskId%2522%253A%2522CSB_RUN_OUTSIDE_CONTAINER%253D1%2520devcontainer%2520templates%2520apply%2520--template-id%2520%255C%2522ghcr.io%252Fdevcontainers%252Ftemplates%252Fjavascript-node%255C%2522%2520--template-args%2520%27%257B%257D%27%2520--features%2520%27%255B%255D%27%2522%252C%2522id%2522%253A%2522clqkz7b24007e2a66eo1ka5p9%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%255D%252C%2522activeTabId%2522%253A%2522clqkz7b24007e2a66eo1ka5p9%2522%257D%257D%252C%2522showDevtools%2522%253Atrue%252C%2522showShells%2522%253Atrue%252C%2522showSidebar%2522%253Atrue%252C%2522sidebarPanelSize%2522%253A15%257D)
+```
+pnpm install && pnpm add -D sass && pnpm run dev
+```
+
+You'll get a message inside the bash terminal:
+
+> **Server running at http://localhost:5173/**
+
+This means that you have successfully set up the project and you are free for local coding.
