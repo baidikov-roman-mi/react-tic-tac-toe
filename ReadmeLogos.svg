@@ -1,32 +1,34 @@
 <svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-    <foreignObject width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <style>
-            .dev-container{
-                    text-align: center;
-                    border-bottom: 2px solid #333;
-            }
-            .icon-container {
-                    display: flex;
-                    gap: 10px;
-                    position: relative;
-            }
-            img{
-                    padding: 5px;
-            }
-            img:hover{
-                    border-bottom: 2px solid #79c0ff;
-            }
-</style>
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .dev-container {
+          text-align: center;
+          border-bottom: 2px solid #333;
+        }
 
-<div class="icon-container">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="35" width="35" alt="html5 logo"  />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" height="35" width="35" alt="typescript logo"  />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="35" width="35" alt="sass logo"  />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="35" width="35" alt="react logo"  />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" height="35" width="35" alt="git logo"  />
-</div>
-<br />
-  </div>
- </foreignObject>
+        .icon-container {
+          display: flex;
+          gap: 10px;
+          position: relative;
+        }
+
+        img {
+          padding: 5px;
+        }
+
+        img:hover {
+          border-bottom: 2px solid #79c0ff;
+        }
+      </style>
+      <div class="icon-container">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="35" width="35" alt="html5 logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" height="35" width="35" alt="typescript logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="35" width="35" alt="sass logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="35" width="35" alt="react logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" height="35" width="35" alt="git logo" />
+      </div>
+      <br />
+    </div>
+  </foreignObject>
 </svg>
