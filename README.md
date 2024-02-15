@@ -8,7 +8,7 @@ This project serves as a tic tac toe game using Vite for faster development, Typ
 
 <div align="center">
 	<br>
-		<img src="/ReadmeLogos.svg" width="800" height="400" alt="Click to see the source">
+		<img src="/ReadmeLogos.svg" width="800" height="100">
 	<br>
 </div>
 
