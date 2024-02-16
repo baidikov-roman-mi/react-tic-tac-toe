@@ -21,10 +21,9 @@ export default function Player({ initialName, symbol, isActive, onChangeName }: 
     setName(event.target.value)
   }
   let playerName = <span className="player-name">{name}</span>
-  let btnCaption = "Edit"
+
   if (edit) {
     playerName = <input type="text" required value={name} onChange={handleNameChange} />
-    btnCaption = "Save"
   }
   return (
     <li className={isActive ? "active" : undefined}>
